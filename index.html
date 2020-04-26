@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>?</title>
+    <!--Import-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/JsCode.js"></script>
+    <link rel="stylesheet" href="css/design.css">
+  </head>
+  <body onload="Paint();">
+    <header>
+      <div class="top">
+        <h1>?</h1>
+      </div>
+    </header>
+        <div class="settings">
+          <button onclick="javascript:clearArea();return false;">Clear Area</button>
+          <!-- SIZE SELECTOR -->
+          <select id="selWidth">
+              <option value="1">smallest</option>
+              <option value="3">small</option>
+              <option value="5" selected="selected">mid</option>
+              <option value="7">big</option>
+              <option value="9">bigger</option>
+              <option value="10">wumbo</option>
+          </select>
+          <!-- END SIZE SELECOR -->
+          <!-- COLOR SELECTOR -->
+          <select id="selColor">
+             <option value="#212121">black</option>
+             <option value="#3498db" selected="selected">blue</option>
+             <option value="#e74c3c">red</option>
+             <option value="#1abc9c">green</option>
+             <option value="#f1c40f">yellow</option>
+             <option value="#95a5a6">gray</option>
+             <option value="#f39c12">orange</option>
+             <option value="white">Rubber</option>
+         </select>
+         <!-- END COLOR SELECTOR -->
+          </div>
+          <canvas id="brushBox" width="1900" height="800" ></canvas>
+  </body>
+</html>
